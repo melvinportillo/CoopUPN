@@ -1,1 +1,1 @@
-web: gunicorn Coop_1.wsgi --log-file -
+web: gunicorn coop_entrega.wsgi --log-file -
