@@ -1,1 +1,1 @@
-web: gunicorn coop_entrega.wsgi --log-file -
+web: gunicorn djangoProject.wsgi --log-file -
