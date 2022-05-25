@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lyjwuxez',
-        'USER': 'lyjwuxez',
-        'PASSWORD': 'zNNxYTw10gYddm1Jp3gmd0BFxtRTIunP',
-        'HOST': 'fanny.db.elephantsql.com',
+        'NAME': 'ayfrdyjq',
+        'USER': 'ayfrdyjq',
+        'PASSWORD': '7ck-0mhEzp_SEVcSm07_fk4Fdyo_9y1v',
+        'HOST': 'drona.db.elephantsql.com',
 
     }
 }
@@ -132,9 +132,9 @@ USE_TZ = True
 STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS=[
+'''STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'staticfiles')
-]
+]'''
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
