@@ -84,12 +84,8 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ayfrdyjq',
-        'USER': 'ayfrdyjq',
-        'PASSWORD': '7ck-0mhEzp_SEVcSm07_fk4Fdyo_9y1v',
-        'HOST': 'drona.db.elephantsql.com',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
