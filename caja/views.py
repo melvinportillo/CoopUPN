@@ -4,19 +4,19 @@ from django.contrib import  messages
 from .models import Temp_Caja, Caja
 from datetime import  date, timedelta
 from core.models import Libro_Diario, Libro_Mayor
-from prestamos.models import Variables_Generales
+#from prestamos.models import Variables_Generales
 from inventario.models import Inventario
 from django.contrib.auth.decorators import login_required, permission_required
 # Create your views here.
 
 class Index(TemplateView):
-    template_name = "caja/index.html"
+    '''template_name = "caja/index.html"
     Variables_Generales.objects.filter(variable="Caja").delete()
     A1=Variables_Generales(
        variable="Caja",
        valor="0"
     )
-    A1.save()
+    A1.save()'''
 
 class Nuevo_Accion(TemplateView):
     template_name = "caja/Nuevo Movimiento.html"
