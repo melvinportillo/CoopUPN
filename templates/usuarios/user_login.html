@@ -1,6 +1,6 @@
 {% extends 'core/base.html' %}
 
-{% block head_title %}Banking System{% endblock %}
+{% block head_title %}Login{% endblock %}
 
 {% block content %}
 {% if form.non_field_errors %}
@@ -13,8 +13,8 @@
 {% endif %}
 <h1 class="font-mono font-bold text-3xl text-center pb-5 pt-10">Iniciar Sesión</h1>
 <hr>
-<div class="w-full mt-10">
-    <form method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+<div class="w-full mt-10" style="text-align: center; display: flex; justify-content: center;">
+    <form method="post" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" style="width: 450px">
         {% csrf_token %}
         {% for hidden_field in form.hidden_fields %}
             {{ hidden_field.errors }}
@@ -35,7 +35,7 @@
         {% endfor %}
 
         <div class="flex items-center justify-between">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            <button style="background-color: #97cb23; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                 Iniciar Sesión
             </button>
         </div>
